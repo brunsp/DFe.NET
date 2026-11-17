@@ -418,4 +418,30 @@ namespace NFe.Classes.Informacoes.Detalhe
         [XmlEnum("4")]
         BensDeInformaticaEOutros
     }
+
+    /// <summary>
+    ///     I17d - Código de atividade do Simples Nacional (NT 2026.005)
+    /// </summary>
+    public enum CAtivSN
+    {
+        [Description("Revenda de mercadorias ou venda de mercadorias industrializadas pelo contribuinte (Anexo I)")]
+        [XmlEnum("01")]
+        RevendaOuIndustrializacaoAnexoI = 1,
+
+        [Description("Operações com os demais bens materiais, sem incidência de ICMS (Anexo I)")]
+        [XmlEnum("02")]
+        DemaisBensSemIcmsAnexoI = 2,
+
+        [Description("Venda de mercadorias industrializadas com industrialização incentivada na ZFM (Anexo II)")]
+        [XmlEnum("03")]
+        IndustrializacaoIncentivadaZfmAnexoII = 3,
+
+        [Description("Operações com os demais bens materiais, industrialização incentivada na ZFM, sem incidência de ICMS (Anexo II)")]
+        [XmlEnum("04")]
+        DemaisBensZfmSemIcmsAnexoII = 4,
+
+        [Description("Operações não tributáveis")]
+        [XmlEnum("90")]
+        NaoTributavel = 90
+    }
 }
